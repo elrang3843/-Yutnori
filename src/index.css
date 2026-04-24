@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@400;600;700;800;900&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background: #0D0500;
+  color: #F5DEB3;
+  font-family: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ── 스크롤바 ── */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.03);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(200,169,81,0.35);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(200,169,81,0.55);
+}
+
+/* ── 기본 버튼 초기화 ── */
+button {
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ── 애니메이션 정의 ── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(22px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0)    scale(1);    }
+}
+
+@keyframes bounceIn {
+  0%   { opacity: 0; transform: scale(0.35); }
+  55%  { opacity: 1; transform: scale(1.1);  }
+  75%  { transform: scale(0.95); }
+  100% { transform: scale(1);    }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1);    opacity: 1;   }
+  50%       { transform: scale(1.06); opacity: 0.82; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px);   }
+  50%       { transform: translateY(-8px);  }
+}
+
+@keyframes floatRotate {
+  0%, 100% { transform: translateY(0px)   rotate(0deg);  }
+  50%       { transform: translateY(-10px) rotate(8deg);  }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg);   }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(200,169,81,0.3);  }
+  50%       { box-shadow: 0 0 22px rgba(200,169,81,0.7); }
+}
+
+@keyframes countUp {
+  0%   { opacity: 1; transform: translateY(0)     scale(1);    }
+  60%  { opacity: 1; transform: translateY(-28px) scale(1.18); }
+  100% { opacity: 0; transform: translateY(-48px) scale(0.9);  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0);    }
+  20%       { transform: translateX(-6px); }
+  40%       { transform: translateX(6px);  }
+  60%       { transform: translateX(-4px); }
+  80%       { transform: translateX(4px);  }
+}
+
+@keyframes ringPulse {
+  0%   { transform: scale(1);    opacity: 0.8; }
+  100% { transform: scale(1.6);  opacity: 0;   }
+}
+
+@keyframes confettiFall {
+  0%   { transform: translateY(-20px) rotate(0deg);   opacity: 1;   }
+  100% { transform: translateY(110vh) rotate(720deg); opacity: 0.2; }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0);    }
+}
+
+/* ── 모바일 ── */
+@media (max-width: 480px) {
+  html { font-size: 14px; }
+
+  /* 작은 화면에서 사이드 패널을 아래로 */
+  .game-layout {
+    flex-direction: column !important;
+  }
+  .side-panel {
+    flex: none !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 360px) {
+  html { font-size: 12px; }
+}
+
+/* ── 포커스 아웃라인 제거 (접근성 유지) ── */
+button:focus-visible {
+  outline: 2px solid rgba(200,169,81,0.7);
+  outline-offset: 2px;
+}
+button:focus:not(:focus-visible) {
+  outline: none;
+}
