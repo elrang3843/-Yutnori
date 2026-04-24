@@ -465,8 +465,11 @@ function JegiGame({ onResult }) {
 // ══════════════════════════════════════════════════════════
 // 퀴즈 게임 - 개선판
 // ══════════════════════════════════════════════════════════
-function QuizGame({ bank = 'history', onClose }) {
-  const questions   = QUIZ_BANK[bank] || QUIZ_BANK.history;
+function QuizGame({ bank = 'history', questions: propQuestions, onClose }) {
+  // spot별 전용 questions가 있으면 우선 사용, 없으면 QUIZ_BANK fallback
+  const questions = (propQuestions && propQuestions.length > 0)
+    ? propQuestions
+    : (QUIZ_BANK[bank] || QUIZ_BANK.history);
   const [qIdx, setQIdx]           = useState(() => Math.floor(Math.random() * questions.length));
   const [selected, setSelected]   = useState(null);
   const [result, setResult]       = useState(null);
@@ -744,7 +747,11 @@ export default function SubGame({ subgame, onClose }) {
 
         <div style={{ padding:'18px' }}>
           {type === SUBGAME_TYPE.QUIZ && (
-            <QuizGame bank={subgame.bank || 'history'} onClose={onClose}/>
+            <QuizGame
+              bank={subgame.bank || 'history'}
+              questions={subgame.questions}
+              onClose={onClose}
+            />
           )}
 
           {type === SUBGAME_TYPE.NONGAK && !result && (

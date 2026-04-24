@@ -140,7 +140,7 @@ export const SPOTS = [
     imageQuery: 'Gyeongbokgung Palace Seoul Korea',
     description:'조선 왕조의 으뜸 궁궐 경복궁! 근정전·경회루·향원정 등 아름다운 건물들이 가득한 서울의 상징입니다. 매일 수문장 교대식이 열립니다.',
     facts:['1395년 태조 이성계 창건','근정전은 국보 제223호','연간 방문객 약 1,400만 명'],
-    youtubeId:'p9-mKJHDpkk', subgame:null,
+    youtubeId:'R5dxale9dCw', subgame:null,
   },
   {
     id:1,  type:NODE_TYPE.NORMAL,
@@ -149,7 +149,7 @@ export const SPOTS = [
     imageQuery: 'Suwon Hwaseong Fortress Korea',
     description:'정조대왕의 꿈이 담긴 수원화성! 1796년에 완성된 과학적이고 아름다운 성곽으로 1997년 유네스코 세계문화유산에 등재되었습니다.',
     facts:['1796년 완공','유네스코 세계문화유산(1997)','둘레 5.74km'],
-    youtubeId:'rMxrMrGkJA4', subgame:null,
+    youtubeId:'TyzBFlm_awo', subgame:null,
   },
   {
     id:2,  type:NODE_TYPE.NORMAL,
@@ -185,7 +185,7 @@ export const SPOTS = [
     imageQuery: 'Andong Hahoe Village Korea traditional',
     description:'낙동강이 마을을 S자로 휘감아 도는 하회마을! 조선 양반 문화의 정수이자 유네스코 세계문화유산. 하회별신굿탈놀이의 본고장입니다.',
     facts:['2010년 유네스코 세계유산','풍산 류씨 600년 세거지','하회탈춤 국가무형문화재'],
-    youtubeId:'tSCyWfPSXFo',
+    youtubeId:'Bb4Gk4kBJlg',
     subgame:{
       type:'quiz', name:'🎭 하회마을 퀴즈', desc:'안동 하회마을의 역사와 문화를 맞혀보세요!',
       questions:[
@@ -203,7 +203,7 @@ export const SPOTS = [
     imageQuery: 'Haeundae Beach Busan Korea',
     description:'한국 최고의 해변 해운대! 눈부신 백사장과 마린시티 스카이라인이 어우러지며, 매년 10월 부산국제영화제(BIFF)가 열립니다.',
     facts:['백사장 길이 1.5km','연간 방문객 1,000만+','부산국제영화제 매년 10월'],
-    youtubeId:'gVBOmZ7KNtU', subgame:null,
+    youtubeId:'oumc0gniisk', subgame:null,
   },
   {
     id:6,  type:NODE_TYPE.NORMAL,
@@ -221,7 +221,7 @@ export const SPOTS = [
     imageQuery: 'Bulguksa Temple Gyeongju Korea UNESCO',
     description:'신라 천년의 고도 경주! 불국사와 석굴암은 8세기 통일신라 불교 건축의 걸작으로 유네스코 세계문화유산입니다.',
     facts:['불국사 751년 창건','석굴암 본존불 국보 24호','경주 역사지구 전체 세계유산'],
-    youtubeId:'ZhP2AVmFG8M',
+    youtubeId:'sHBTxsEMpM0',
     subgame:{
       type:'quiz', name:'⛩️ 경주 신라 역사 퀴즈', desc:'신라 천년 고도 경주의 역사를 맞혀보세요!',
       questions:[
@@ -239,7 +239,7 @@ export const SPOTS = [
     imageQuery: 'Gangneung Ojukheon Korea',
     description:'동해안의 보석 강릉! 신사임당과 율곡 이이의 생가 오죽헌, 아름다운 경포대, 그리고 유네스코 인류무형유산 강릉단오제의 고장.',
     facts:['오죽헌: 5천원권 지폐 배경','강릉단오제 유네스코 유산','경포 해변 연간 400만 방문'],
-    youtubeId:'BHXmSFHAP8E',
+    youtubeId:'OyfdtJYoK78',
     subgame:{ type:'jegi', name:'🪃 제기차기 미니게임', desc:'강릉 단오 전통 놀이를 즐겨보세요!' },
   },
   {
@@ -249,7 +249,7 @@ export const SPOTS = [
     imageQuery: 'Seoraksan National Park Korea autumn',
     description:'한국의 알프스 설악산! 울산바위·비룡폭포·권금성 케이블카 등 사계절 내내 아름답고, 가을 단풍은 전국 최고입니다.',
     facts:['1970년 국립공원 지정','유네스코 생물권보전지역','최고봉 대청봉 1,708m'],
-    youtubeId:'xmrVE3LfVEo', subgame:null,
+    youtubeId:'DojiZ2zDyok', subgame:null,
   },
   {
     id:10, type:NODE_TYPE.NORMAL,
@@ -276,7 +276,7 @@ export const SPOTS = [
     imageQuery: 'Gwanghwamun Plaza Seoul Korea',
     description:'대한민국의 심장 서울! 광화문광장과 청계천이 어우러지고, N서울타워에서 서울 야경을 한눈에 담을 수 있습니다.',
     facts:['광화문: 경복궁 정문(1395)','N서울타워 높이 236m','인사동·북촌 전통문화거리'],
-    youtubeId:'KptbPHEZMr4',
+    youtubeId:'FGKMCbsbpeI',
     subgame:{ type:'nongak', name:'🥁 사물놀이 리듬게임', desc:'전통 사물놀이 리듬을 맞춰보세요!' },
   },
   {
@@ -286,7 +286,7 @@ export const SPOTS = [
     imageQuery: 'Jeonju Hanok Village Korea traditional',
     description:'한국 전통의 맛과 멋이 살아있는 전주 한옥마을! 700여 채의 한옥, 전주비빔밥·막걸리, 판소리가 어우러진 문화의 도시.',
     facts:['700여 채 한옥 보존','전주비빔밥·막걸리 발상지','유네스코 음식 창의도시'],
-    youtubeId:'u3YNQPp0I44',
+    youtubeId:'XP6eT2wFc8o',
     subgame:{
       type:'quiz', name:'🍚 전주 문화 퀴즈', desc:'전주 한옥마을의 음식과 전통 문화를 맞혀보세요!',
       questions:[
@@ -313,7 +313,7 @@ export const SPOTS = [
     imageQuery: 'Jeju Seongsan Ilchulbong Hallasan Korea',
     description:'한국의 보석 섬 제주도! 한라산(남한 최고봉), 성산일출봉, 만장굴 3개의 유네스코 세계자연유산이 한 섬에 있습니다.',
     facts:['세계자연유산 3곳 보유','한라산 1,950m 남한 최고봉','흑돼지·감귤 대표 특산품'],
-    youtubeId:'z5P_zGFHDaE',
+    youtubeId:'9W02GJIdOkg',
     subgame:{
       type:'quiz', name:'🌺 제주 자연 퀴즈', desc:'제주도의 자연유산과 특산물을 맞혀보세요!',
       questions:[
@@ -332,7 +332,7 @@ export const SPOTS = [
     imageQuery: 'N Seoul Tower Namsan Korea night',
     description:'서울의 랜드마크 N서울타워! 남산 정상에 우뚝 솟아 서울 전경을 한눈에 담을 수 있으며, 사랑의 자물쇠로도 유명합니다.',
     facts:['타워 높이 236m(해발 479.7m)','사랑의 자물쇠 약 100만 개','야경 명소 세계 TOP 10'],
-    youtubeId:'EV5E-UJgRyA',
+    youtubeId:'NMEozvfHIu4',
     subgame:{ type:'nongak', name:'🥁 사물놀이 리듬게임', desc:'한국 전통 사물놀이 리듬을 맞춰보세요!' },
   },
   // TR shortcut nodes
